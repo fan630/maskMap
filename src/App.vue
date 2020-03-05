@@ -214,13 +214,16 @@ export default {
 
        L.marker([newLat, newLng]).addTo(osmMap)
          .bindPopup(
-           `<h4>${store.properties.name}</h4>
-               <p>
-                  成人口罩:<mark>${store.properties.mask_adult}</mark><br>
-                  兒童口罩:${store.properties.mask_child}<br>
-                  診所電話:
-                  <a href="tel:+886-${store.properties.phone}">${store.properties.phone}</a>
-               </p>`
+            `<div class="h5">
+                    ${store.properties.name}
+                </div>
+               <div class="d-flex flex-column">
+                  <div>成人口罩:${store.properties.mask_adult}</div>
+                  <div>兒童口罩:${store.properties.mask_child}</div>
+                  <div>診所電話:
+                    <a href="tel:+886-${store.properties.phone}">${store.properties.phone}</a>
+                  </div>
+               </div>`
          ).openPopup();
     },
 
@@ -255,12 +258,16 @@ export default {
         markers.addLayer(
           L.marker([this.geoInfo[i].lng, this.geoInfo[i].lat], {
             icon: this.filterColor(this.geoInfo[i].adult)
-          }).bindPopup(`<h3>${this.geoInfo[i].name}</h3>
-                              <p>
-                                成人口罩:${this.geoInfo[i].adult}  
-                                兒童口罩:${this.geoInfo[i].child}
-                                診所電話:${this.geoInfo[i].phone}
-                              </p>`)
+          }).bindPopup(`<div class="h4">
+                    ${this.geoInfo[i].name}
+                </div>
+               <div class="d-flex flex-column">
+                  <div>成人口罩: ${this.geoInfo[i].adult} </div>
+                  <div>兒童口罩: ${this.geoInfo[i].child}</div>
+                  <div>診所電話:
+                    <a href="tel:+886-${this.geoInfo[i].phone}"> ${this.geoInfo[i].phone}</a>
+                  </div>
+               </div>`)
         );
       }
       osmMap.addLayer(markers);
