@@ -12,7 +12,7 @@
             </b-button>
             <b-modal id="modal-lg" size="md" title="購買規定 (2020/03/10)" hide-footer>
                  <div class="text-center">
-                                    <img src="https://g0vhackmd.blob.core.windows.net/g0v-hackmd-images/upload_578cefcca77397ee2d440158053e65f7" alt="" srcset="" width="70%" height="50%">
+                              <img src="https://g0vhackmd.blob.core.windows.net/g0v-hackmd-images/upload_578cefcca77397ee2d440158053e65f7" alt="" srcset="" width="70%" height="50%">
                  <p class="text-info">
                     <a href="https://www.cdc.gov.tw/Bulletin/Detail/wycLegOplsUwGsH6_SPAXg?typeid=9" target="_blank">
                         資料來源:衛生福利部疾病管制署
