@@ -2,7 +2,7 @@
 Created by Vue
 
 ## 連結
-[Maskmap](https://fan630.github.io/maskMap/dist/)
+[Maskmap](https://fan630.github.io/maskMap/#/)
 
 ## 簡介
 使用Vue框架開發，透過 leaflet.js 和 OpenStreetMap 搭建地圖資訊，串接衛服部健保署所開發的 API ，視覺化當前全台口罩存貨的販售資訊與熱點. 

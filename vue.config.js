@@ -1,3 +1,6 @@
 module.exports = {
-    publicPath: '/maskMap/dist'
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/maskMap/'
+        : '/'
+    ,
 }
